@@ -1,0 +1,17 @@
+CURRENT PHASE: Phase 1 완료 ✅ → Phase 2 준비
+
+Phase 1 완료 항목:
+- [x] backend/main.py — FastAPI 앱 + CORS 설정 (localhost:5173 허용)
+- [x] backend/utils/image_utils.py — bytes↔array 변환, 최대 2048px 리사이즈
+- [x] backend/services/analyzer.py — 밝기/색온도/채도/히스토그램/무드 분석
+- [x] backend/services/corrector.py — match_histograms + strength 파라미터
+- [x] backend/routers/analyze.py — POST /api/analyze
+- [x] backend/routers/correct.py — POST /api/correct
+
+Phase 1 완료 기준 (curl 테스트 후 확인):
+- [ ] curl로 /api/analyze 테스트 통과
+- [ ] curl로 /api/correct 테스트 통과 (보정 이미지 반환)
+
+다음 단계: Phase 2 (프론트엔드 기본 UI + API 연동)
+
+마지막 업데이트: 2026-04-09
